@@ -1,0 +1,25 @@
+{
+  "name": "doll-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/dollhouse/src/index.js --transpile-only",
+    "dev": "ts-node src/index.ts --transpile-only",
+    "build": "rm -rf ./dist && npm run build:dist",
+    "build:dist": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "optionalDependencies": {
+    "rpi-ws281x": "^1.0.36"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  }
+}
